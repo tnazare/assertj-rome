@@ -48,8 +48,9 @@ public class FeedAssertTest_hasLink_Test {
     public void fails_on_null_feed() {
         exception.expect(AssertionError.class);
         exception.expectMessage("Expecting actual not to be null");
+	     SyndFeed feed = null;
 
-        assertThat(null).hasLink("href", "type", "rel", "title");
+        assertThat(feed).hasLink("href", "type", "rel", "title");
     }
 
     @Test

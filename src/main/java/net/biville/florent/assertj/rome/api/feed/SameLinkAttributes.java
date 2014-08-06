@@ -15,7 +15,7 @@ package net.biville.florent.assertj.rome.api.feed;
 import com.google.common.base.Predicate;
 import com.sun.syndication.feed.synd.SyndLink;
 
-class SameLinkAttributes implements Predicate<SyndLink> {
+public class SameLinkAttributes implements Predicate<SyndLink> {
 
     private final String href;
     private final String type;

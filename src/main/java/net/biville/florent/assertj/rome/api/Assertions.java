@@ -12,7 +12,9 @@
  */
 package net.biville.florent.assertj.rome.api;
 
+import com.sun.syndication.feed.synd.SyndEntry;
 import com.sun.syndication.feed.synd.SyndFeed;
+import net.biville.florent.assertj.rome.api.entry.EntryAssert;
 import net.biville.florent.assertj.rome.api.feed.FeedAssert;
 
 public class Assertions {
@@ -20,4 +22,8 @@ public class Assertions {
     public static FeedAssert assertThat(SyndFeed feed) {
         return new FeedAssert(feed);
     }
+
+	public static EntryAssert assertThat(SyndEntry entry){
+		return new EntryAssert(entry);
+	}
 }
